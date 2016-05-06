@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打字游戏</title>
+	<script src="./js/animate.js"></script>
+	<script src="./js/function.js"></script>
+	<script src="./js/game.js"></script>
+	<script>
+		$(function(){
+			var bg=$('.bg')[0];
+			var levels=$('.levels')[0];
+			var scores=$('.scores')[0];
+			var start=$('.start')[0];
+			var pause=$('.pause')[0];
+			var end=$('.end')[0];
+			var action=$('.action')[0];
+			new game(bg,levels,scores,start,pause,end,action);
+		})
+	</script>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div class="bg">
+		<div class="player_box">
+			<div class="level_box">
+				<div class="level_img"></div>
+				<div class="level_num">
+					第<span class="levels">1</span>波
+				</div>
+			</div>
+			<div class="score_box">
+				<div class="score_img"></div>
+				<div class="score_num">
+					X<span class="scores">0</span>
+				</div>
+			</div>
+		</div>
+		<div class="btn">
+			<div class="start">开始</div>
+			<div class="pause">暂停</div>
+			<div class="end">结束</div>
+		</div>
+		<div class="action">
+			<img src="./images/圣诞老人.png" alt="">
+		</div>
+	</div>
+</body>
+</html>

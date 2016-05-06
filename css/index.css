@@ -1,0 +1,132 @@
+body,ul,li,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: "微软雅黑" "Arial";
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	background: url(../images/game_bg.jpg) no-repeat center bottom;
+	background-size: cover;
+}
+
+/*关卡、分数*/
+	.player_box{
+		width: 250px;
+		height: 40px;
+		position: absolute;
+		top: 30px;
+		left: 40px;
+		z-index: 99999999;
+	}
+	/*关卡*/
+	.level_box{
+		width: 120px;
+		height: 100%;
+		float: left;
+		margin-right: 10px;
+	}
+	.level_img{
+		width: 40px;
+		height: 100%;
+		float: left;
+		background: url(../images/laoren.png) no-repeat center;
+		background-size: 40px 40px;
+	}
+	.level_num{
+		width: 80px;
+		height: 100%;
+		text-align: center;
+		line-height: 40px;
+		float: left;
+		font-size: 18px;
+		color: #E8E8E8;
+		font-weight: 600;
+	}
+	.level_num span{
+		display: inline-block;
+		width: 28px;
+		font-size: 22px;
+		color: #E8E8E8;
+	}
+	/*分数*/
+	.score_box{
+		width: 120px;
+		height: 100%;
+		float: left;
+	}
+	.score_img{
+		width: 40px;
+		height: 100%;
+		float: left;
+		background: url(../images/fudai.png) no-repeat center;
+		background-size: 32px 36px; 
+	}
+	.score_num{
+		width: 80px;
+		height: 100%;
+		text-align: center;
+		float: left;
+		line-height: 40px;
+		font-size: 18px;
+		color: #E8E8E8;
+		font-weight: 600;
+	}
+	.score_num span{
+		display: inline-block;
+		width: 54px;
+		padding-left: 6px;
+		font-size: 22px;
+		color: #E8E8E8;
+		text-align: left;
+	}
+
+/*开始、暂停、结束*/
+	.btn{
+		width: 160px;
+		height: 150px;
+		position: absolute;
+		z-index: 99999;
+		bottom: 60px;
+		left: 40px;
+	}
+	.start,.pause,.end{
+		width: 100%;
+		height: 40px;
+		margin-bottom: 10px;
+		background: #E74A2F;
+		text-align: center;
+		line-height: 40px;
+		font-size: 24px;
+		font-weight: 600;
+		color: #E8E8E8;
+		border-radius: 8px;
+		cursor: pointer;
+		box-shadow: 0 0 6px #ccc;
+	}
+	.start:active{
+		box-shadow: none;
+	}
+	.pause:active{
+		box-shadow: none;
+	}
+	.end:active{
+		box-shadow: none;
+	}
+
+/*动画*/
+	.action{
+		position: absolute;
+		top: 40%;
+		left: -260px;
+		z-index: 10000;
+	}
+	.action img{
+		width: 260px;
+	}
